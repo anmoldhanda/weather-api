@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather api</title>
+    <!-- ============================== custom css file ============================== -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weatherapi-container">
+      <h2 class="headline">weather api</h2>
+      <p id="search-result-city"></p>
+      <div class="input-location-container">
+        <form action="#" method="post" class="check-weather-form">
+          <input
+            type="text"
+            name="weather"
+            id="inputlocation"
+            placeholder="Enter your location to check weather"
+          />
+          <button id="checkweatherbtn">submit</button>
+        </form>
+      </div>
+      <div class="weather-details-container">
+        <div class="temperature-box weatherdetailsbox">
+          <p class="temperature-text">temperature</p>
+          <p id="temperature" class="weather-result"></p>
+        </div>
+        <div class="humidity-box weatherdetailsbox">
+          <p class="humidity-text">humidity</p>
+          <p id="humidity" class="weather-result"></p>
+        </div>
+        <div class="windspeed-box weatherdetailsbox">
+          <p class="windspeed-text">wind speed</p>
+          <p id="windspeed" class="weather-result"></p>
+        </div>
+        <div class="wind-degrees-box weatherdetailsbox">
+          <p class="wind-degrees-text">wind degrees</p>
+          <p id="wind-degrees" class="weather-result"></p>
+        </div>
+      </div>
+    </div>
+    <!-- ============================== custom js file ============================== -->
+    <script src="main.js"></script>
+  </body>
+</html>

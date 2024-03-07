@@ -1,0 +1,114 @@
+/* ========================================== google fonts ========================================== */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+/* ========================================== root variables ========================================== */
+:root {
+  --backgroundcolor: #e2e3f0;
+  --whitecolor: #fff;
+  --redcolor: #ff7782;
+  --textdark: #363949;
+  --boxshadow: 0 2rem 3rem #c7cbf2;
+}
+
+body {
+  background: var(--backgroundcolor);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.weatherapi-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: var(--whitecolor);
+  box-shadow: var(--boxshadow);
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.4s ease;
+  border-radius: 0.5rem;
+  transform: translate(-50%, -50%);
+}
+
+.weatherapi-container:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+.headline {
+  color: var(--redcolor);
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.weather-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  gap: 15px;
+  text-transform: capitalize;
+  color: var(--textdark);
+  font-weight: 600;
+  border: 2px dashed var(--redcolor);
+}
+
+.input-location-container {
+  box-shadow: var(--boxshadow);
+  padding: 1rem 3rem 3rem;
+  border-radius: 0.5rem;
+  background: var(--whitecolor);
+}
+
+#checkweatherbtn {
+  background: var(--whitecolor);
+  color: var(--redcolor);
+  padding: 5px 10px;
+  text-transform: capitalize;
+  border: 1px dashed var(--redcolor);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+
+#checkweatherbtn:hover {
+  background: var(--redcolor);
+  color: var(--whitecolor);
+}
+
+#inputlocation {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0 0 10px;
+}
+
+/* ========================================== search result city indicator ========================================== */
+#search-result-city {
+  color: var(--textdark);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.weatherdetailsbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.weather-result {
+  font-size: 12px;
+}
